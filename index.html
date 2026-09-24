@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruang Seduh Coffee</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="wrap">
+            <h1>Ruang Seduh</h1>
+            <p>Tempat ngopi dan nugas santai daerah kampus. Wifi kenceng, suasana tenang, plus racikan kopi lokal pas di kantong.</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="wrap nav-box">
+            <button class="btn-menu" id="btnMenu">☰ Menu Navigation</button>
+            <div class="menu-list" id="menuList">
+                <a href="#about">Profil</a>
+                <a href="#fasilitas">Fasilitas</a>
+                <a href="#menu">Daftar Menu</a>
+                <a href="#kontak">Kontak & Reservasi</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="wrap">
+
+        <section id="about">
+            <h2>Tentang Ruang Seduh</h2>
+            <img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=800&q=80" alt="Suasana Cafe">
+            <p>Ruang Seduh hadir buat kamu yang nyari spot nyaman buat diskusi kelompok, garap tugas, atau cuma nongkrong sama temen. Punya interior bernuansa hangat dengan olahan biji kopi pilihan langsung dari petani lokal.</p>
+        </section>
+
+        <section id="fasilitas">
+            <h2>Fasilitas Yang Tersedia</h2>
+            <ul class="list-fasilitas">
+                <li>📌 Koneksi Wi-Fi Fiber Cepat</li>
+                <li>📌 Stopkontak Listrik Banyak</li>
+                <li>📌 Ruangan AC (Indoor) & Smoking Area (Outdoor)</li>
+                <li>📌 Parkiran Luas & Aman</li>
+            </ul>
+        </section>
+
+        <section id="menu">
+            <h2>Menu Pilihan</h2>
+            
+            <div class="sub-menu">
+                <h3>☕ Kopi Spesial</h3>
+                <ul>
+                    <li><strong>Kopi Seduh Jiwa</strong> - Double shot espresso + gula aren murni + susu cair segar.</li>
+                    <li><strong>Butterscotch Cold Brew</strong> - Kopi peram 12 jam bersensasi gurih manis butterscotch.</li>
+                </ul>
+            </div>
+
+            <div class="sub-menu">
+                <h3>🥤 Non-Kopi & Cemilan</h3>
+                <ul>
+                    <li><strong>Earl Grey Milk Tea</strong> - Teh Earl Grey dipadu manis gurihnya milk foam.</li>
+                    <li><strong>Snack Platter Mix</strong> - Kentang goreng, sosis, dan nugget renyah.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="kontak">
+            <h2>Kirim Pesan / Booking Meja</h2>
+            <form id="formPesan">
+                <div class="field">
+                    <label for="nama">Nama Lengkap</label>
+                    <input type="text" id="nama" placeholder="Isi nama kamu..." required>
+                </div>
+                <div class="field">
+                    <label for="email">Alamat Email</label>
+                    <input type="email" id="email" placeholder="Isi email aktif..." required>
+                </div>
+                <div class="field">
+                    <label for="pesan">Pesan / Catatan Reservasi</label>
+                    <textarea id="pesan" rows="4" placeholder="Tuliskan pesan atau jadwal reservasi..." required></textarea>
+                </div>
+                <button type="submit" id="btnKirim">Kirim Sekarang</button>
+            </form>
+            <div id="pesanSuksess" class="alert-box hide"></div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="wrap">
+            <p>&copy; 2026 Ruang Seduh Coffee. Dibuat untuk tugas web development.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
